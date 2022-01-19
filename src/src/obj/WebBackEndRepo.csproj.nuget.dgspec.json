@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\a843683\\Source\\Repos\\WebBackEndRepo\\src\\src\\WebBackEndRepo.csproj": {}
+    "C:\\Users\\Joshu\\Documents\\ATOS\\GitJoshuaAtos\\WebBackEndRepo\\src\\src\\WebBackEndRepo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a843683\\Source\\Repos\\WebBackEndRepo\\src\\src\\WebBackEndRepo.csproj": {
+    "C:\\Users\\Joshu\\Documents\\ATOS\\GitJoshuaAtos\\WebBackEndRepo\\src\\src\\WebBackEndRepo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a843683\\Source\\Repos\\WebBackEndRepo\\src\\src\\WebBackEndRepo.csproj",
+        "projectUniqueName": "C:\\Users\\Joshu\\Documents\\ATOS\\GitJoshuaAtos\\WebBackEndRepo\\src\\src\\WebBackEndRepo.csproj",
         "projectName": "WebBackEndRepo",
-        "projectPath": "C:\\Users\\a843683\\Source\\Repos\\WebBackEndRepo\\src\\src\\WebBackEndRepo.csproj",
-        "packagesPath": "C:\\Users\\a843683\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a843683\\Source\\Repos\\WebBackEndRepo\\src\\src\\obj\\",
+        "projectPath": "C:\\Users\\Joshu\\Documents\\ATOS\\GitJoshuaAtos\\WebBackEndRepo\\src\\src\\WebBackEndRepo.csproj",
+        "packagesPath": "C:\\Users\\Joshu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Joshu\\Documents\\ATOS\\GitJoshuaAtos\\WebBackEndRepo\\src\\src\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\a843683\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Joshu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
