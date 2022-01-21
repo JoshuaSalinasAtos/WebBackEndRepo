@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebCourseRepo.Models
@@ -18,17 +19,12 @@ namespace WebCourseRepo.Models
 
         public bool? Deleted { get; set; }
 
+
         //[DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}",  ApplyFormatInEditMode = true)]
-        [Required]
-        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime CreatedDate { get; set; }
         public int? CreatedBy { get; set; }
-
-        [Required]
-        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime UpdatedDate { get; set; }
         public int? UpdatedBy { get; set; }
-
         [Required] 
         public Status Status { get; set; }
 

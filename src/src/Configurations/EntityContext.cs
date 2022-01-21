@@ -9,12 +9,22 @@ namespace WebCourseRepo.Configurations
         public DbSet<Status> Status { get; set; }
 
         public EntityContext(DbContextOptions options) : base(options)
-        { }
-        
+        {
+
+        }
+        public void Traceable(ModelBuilder builder, Type type)
+        {
+            builder.Entity(type).Property("CreatedDate").HasDefaultValueSql("getdate()");
+            builder.Entity(type).Property("UpdatedDate").HasDefaultValueSql("getdate()");
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             SeedStatus(modelBuilder);
+
+
         }
+        
 
         private void SeedStatus(ModelBuilder modelBuilder)
         {

@@ -25,9 +25,9 @@ namespace WebCourseRepo.Repositories.Implementation
             return await _entityContext.Status.FindAsync(id);
         }
 
-        public void Insert(Status course)
+        public void Insert(Status status)
         {
-            _entityContext.Status.Add(course);
+            _entityContext.Status.Add(status);
         }
 
         public async Task Delete(int id)
@@ -36,9 +36,9 @@ namespace WebCourseRepo.Repositories.Implementation
             _entityContext.Status.Remove(toDelete!);
         }
 
-        public void Update(Status course)
+        public void Update(Status status)
         {
-            _entityContext.Status.Update(course);
+            _entityContext.Status.Update(status);
         }
 
         public async Task<int> Save()

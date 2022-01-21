@@ -10,16 +10,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["WebCourseRepo/WebCourseRepo.csproj", "WebCourseRepo/"]
-RUN dotnet restore "WebCourseRepo/WebCourseRepo.csproj"
+COPY ["WebBackEndRepo/WebBackEndRepo.csproj", "WebBackEndRepo/"]
+RUN dotnet restore "WebBackEndRepo/WebBackEndRepo.csproj"
 COPY . .
-WORKDIR "/src/WebCourseRepo"
-RUN dotnet build "WebCourseRepo.csproj" -c Release -o /app/build
+WORKDIR "/src/WebBackEndRepo"
+RUN dotnet build "WebBackEndRepo.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "WebCourseRepo.csproj" -c Release -o /app/publish
+RUN dotnet publish "WebBackEndRepo.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "WebCourseRepo.dll"]
+ENTRYPOINT ["dotnet", "WebBackEndRepo.dll"]

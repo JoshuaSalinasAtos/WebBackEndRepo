@@ -11,35 +11,35 @@ namespace WebCourseRepo.Controllers
     [ApiController]
     public class StatusController : ControllerBase
     {
-        private readonly ICourseService _statusController;
+        private readonly IStatusService _statusController;
 
-        public StatusController(ICourseService courseService)
+        public StatusController(IStatusService statusService)
         {
-            _statusController = courseService;
+            _statusController = statusService;
         }
         //Get: api/Course
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            List<CourseDto> status = await _statusController.FindAll();
+            List<StatusDto> status = await _statusController.FindAll();
             return Ok(status);
         }
         //Get api/Course/Id
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            CourseDto? courseDto = await _statusController.FindById(id);
-            return courseDto != null ? Ok(courseDto) : NotFound();
+            StatusDto? statusDto = await _statusController.FindById(id);
+            return statusDto != null ? Ok(statusDto) : NotFound();
         }
 
         //Post create
         [HttpPost]
-        public async Task<IActionResult> Create(CourseDto courseDto)
+        public async Task<IActionResult> Create(StatusDto statusDto)
         {
             try
             {
-                await _statusController.Insert(courseDto);
-                return Created(Request.GetDisplayUrl(), courseDto);
+                await _statusController.Insert(statusDto);
+                return Created(Request.GetDisplayUrl(), statusDto);
             }
             catch (Exception e)
             {
@@ -50,11 +50,12 @@ namespace WebCourseRepo.Controllers
 
         //Put update
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, CourseDto courseDto)
+        public async Task<IActionResult> Update(int id, StatusDto statusDto)
         {
-            if (id != courseDto.Id) return BadRequest();
-            _statusController.Update(courseDto);
+            if (id != statusDto.Id) return BadRequest();
+            _statusController.Update(statusDto);
             return NoContent();
+
         }
     }
 }

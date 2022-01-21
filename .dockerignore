@@ -23,3 +23,8 @@
 **/values.dev.yaml
 LICENSE
 README.md
+src/bin
+src/obj
+src/bin
+src/obj
+out/

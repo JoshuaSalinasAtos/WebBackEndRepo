@@ -35,7 +35,7 @@ namespace WebCourseRepo
             //Database configuration
             //Server=localhost;Database=db_upgrade;User Id=sa;Password=******;
             services.AddDbContext<EntityContext>(
-                options => options.UseSqlServer(Configuration.GetConnectionString("DbUpgrade")));
+                options => options.UseSqlServer(Configuration.GetConnectionString("CourseConnection")));
 
             //Repositories
             //----COURSES------//

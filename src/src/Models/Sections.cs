@@ -25,6 +25,7 @@ namespace WebBackEndRepo.Models
         public bool Deleted { get; set; }
 
         [Required]
+        //IEnumerable/IList/ICollection
         public ICollection<Course> Course { get; set; }
         [Required]
         public ICollection<Status> Status { get; set; }
