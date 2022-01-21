@@ -9,9 +9,6 @@ namespace WebCourseRepo.Dtos
         public string Name { get; set; }
         public string Description { get; set; }
 
-        public static implicit operator StatusDto(Status v)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

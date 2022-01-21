@@ -10,9 +10,9 @@ namespace WebCourseRepo.Dtos
         public double Duration { get; set; }
         public double Rating { get; set; }
         public bool Deleted { get; set; }
-        public DateTime CreatedDate { get; set; }
+        public DateTime? CreatedDate { get; set; }
         public int CreatedBy { get; set; }
-        public DateTime UpdatedDate { get; set; }
+        public DateTime? UpdatedDate { get; set; }
         public int UpdatedBy { get; set; }
 
     }

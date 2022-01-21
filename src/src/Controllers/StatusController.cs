@@ -11,24 +11,24 @@ namespace WebCourseRepo.Controllers
     [ApiController]
     public class StatusController : ControllerBase
     {
-        private readonly IStatusService _statusController;
+        private readonly IStatusService _statusService;
 
         public StatusController(IStatusService statusService)
         {
-            _statusController = statusService;
+            _statusService = statusService;
         }
         //Get: api/Course
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            List<StatusDto> status = await _statusController.FindAll();
+            List<StatusDto> status = await _statusService.FindAll();
             return Ok(status);
         }
         //Get api/Course/Id
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            StatusDto? statusDto = await _statusController.FindById(id);
+            StatusDto? statusDto = await _statusService.FindById(id);
             return statusDto != null ? Ok(statusDto) : NotFound();
         }
 
@@ -38,7 +38,7 @@ namespace WebCourseRepo.Controllers
         {
             try
             {
-                await _statusController.Insert(statusDto);
+                await _statusService.Insert(statusDto);
                 return Created(Request.GetDisplayUrl(), statusDto);
             }
             catch (Exception e)
@@ -53,7 +53,7 @@ namespace WebCourseRepo.Controllers
         public async Task<IActionResult> Update(int id, StatusDto statusDto)
         {
             if (id != statusDto.Id) return BadRequest();
-            _statusController.Update(statusDto);
+            _statusService.Update(statusDto);
             return NoContent();
 
         }
