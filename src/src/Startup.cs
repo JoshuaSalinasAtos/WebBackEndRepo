@@ -11,6 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using api.Grpc;
+using WebBackEndRepo.Remote.Grpc.Server.Services;
 using WebCourseRepo.Configurations;
 using WebCourseRepo.Repositories;
 using WebCourseRepo.Repositories.Implementation;
@@ -45,6 +47,9 @@ namespace WebCourseRepo
             services.AddScoped<ICourseRepository, CourseRepository>();
             services.AddScoped<ICourseService, CourseService>();
 
+            //Grpc Services
+            services.AddGrpc();
+            
             services.AddControllers();
             services.AddAutoMapper(typeof(Program));
             services.AddSwaggerGen(c =>
@@ -75,6 +80,13 @@ namespace WebCourseRepo
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapGrpcService<GrpcCoursesService>();
+                //get protos
+                endpoints.MapGet("protos/courses.proto", async context =>
+                {
+                    await context.Response.WriteAsync(File.ReadAllText("Remote/Grpc/Server/Protos/courses.proto"));
+                });
+
                 endpoints.MapControllers();
             });
         }

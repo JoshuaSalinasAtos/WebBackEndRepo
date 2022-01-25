@@ -9,6 +9,8 @@ namespace WebCourseRepo.Services
     {
         Task<List<CourseDto>> FindAll();
         Task<CourseDto?> FindById(int id);
+        
+        Task<List<CourseDto>> FindByIds(List<int> ids);
         Task Insert(CourseDto course);
         Task Delete(int id);
         void Update(CourseDto course);

@@ -24,6 +24,13 @@ namespace WebCourseRepo.Repositories.Implementation
         {
             return await _entityContext.Course.FindAsync(id);
         }
+        
+        public async Task<List<Course>> FindByIds(List<int> ids) //TODO: Validar posibles errores.
+        {
+            var query = _entityContext.Course.Where(entity => ids.Contains(entity.Id));
+            Console.WriteLine(query.ToQueryString());                
+            return await query.ToListAsync();
+        }
 
         public void Insert(Course course)
         {

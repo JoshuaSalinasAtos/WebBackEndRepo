@@ -9,7 +9,7 @@ namespace WebCourseRepo.Models
 
         [Required]
         [StringLength(250)]
-        public string? Name { get; set; }
+        public string Name { get; set; }
 
         public string? Description { get; set; } 
 
@@ -17,7 +17,7 @@ namespace WebCourseRepo.Models
         
         public double? Rating { get; set; }
 
-        public bool? Deleted { get; set; }
+        public bool Deleted { get; set; }
 
 
         //[DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}",  ApplyFormatInEditMode = true)]

@@ -9,6 +9,6 @@ services:
       SA_PASSWORD: Passw0rd.
       MSSQL_PID: Express
     volumes:
-      - C:\Users\a842225\source\repos\GitJoshua\WebBackEndRepo\DB\data:/var/opt/mssql/data
-      - C:\Users\a842225\source\repos\GitJoshua\WebBackEndRepo\DB\secrets:/var/opt/mssql/secrets
-      - C:\Users\a842225\source\repos\GitJoshua\WebBackEndRepo\DB\log:/var/opt/mssql/log
+      - C:\Users\a842655\RiderProjects\UPGRADE\backend\src\CoursesService\WebBackEndRepo\DB\data:/var/opt/mssql/data
+      - C:\Users\a842655\RiderProjects\UPGRADE\backend\src\CoursesService\WebBackEndRepo\DB\secrets:/var/opt/mssql/secrets
+      - C:\Users\a842655\RiderProjects\UPGRADE\backend\src\CoursesService\WebBackEndRepo\DB\log:/var/opt/mssql/log
