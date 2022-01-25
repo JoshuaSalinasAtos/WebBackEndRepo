@@ -22,9 +22,13 @@
 **/secrets.dev.yaml
 **/values.dev.yaml
 LICENSE
+<<<<<<< HEAD
 README.md
 src/bin
 src/obj
 src/bin
 src/obj
 out/
+=======
+README.md
+>>>>>>> 6849734fc1c37f37392779fd77bd2c9465e00058
