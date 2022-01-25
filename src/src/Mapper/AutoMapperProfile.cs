@@ -14,6 +14,9 @@ namespace WebCourseRepo.Profiles
             CreateMap<Status, StatusDto>();
             CreateMap<StatusDto, Status>();
 
+            
+            //Dto -> Grpc
+            CreateMap<CourseDto, api.Grpc.Course>();
         }
     }
 }

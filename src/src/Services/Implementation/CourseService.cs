@@ -32,6 +32,12 @@ namespace WebCourseRepo.Services.Implementation
                 : _mapper.Map<Course, CourseDto>(course);
         }
 
+        public async Task<List<CourseDto>> FindByIds(List<int> ids)
+        {
+            List<Course> courses = await _courseRepository.FindByIds(ids);
+            return _mapper.Map<List<Course>, List<CourseDto>>(courses);
+        }
+
         public async Task Insert(CourseDto courseDto)
         {
             Course course = _mapper.Map<CourseDto, Course>(courseDto);

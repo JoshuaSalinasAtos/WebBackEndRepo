@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\a842225\\source\\repos\\GitJoshua\\WebBackEndRepo\\src\\src\\WebBackEndRepo.csproj": {}
+    "C:\\Users\\a842655\\RiderProjects\\UPGRADE\\backend\\src\\CoursesService\\WebBackEndRepo\\src\\src\\WebBackEndRepo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a842225\\source\\repos\\GitJoshua\\WebBackEndRepo\\src\\src\\WebBackEndRepo.csproj": {
+    "C:\\Users\\a842655\\RiderProjects\\UPGRADE\\backend\\src\\CoursesService\\WebBackEndRepo\\src\\src\\WebBackEndRepo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a842225\\source\\repos\\GitJoshua\\WebBackEndRepo\\src\\src\\WebBackEndRepo.csproj",
+        "projectUniqueName": "C:\\Users\\a842655\\RiderProjects\\UPGRADE\\backend\\src\\CoursesService\\WebBackEndRepo\\src\\src\\WebBackEndRepo.csproj",
         "projectName": "WebBackEndRepo",
-        "projectPath": "C:\\Users\\a842225\\source\\repos\\GitJoshua\\WebBackEndRepo\\src\\src\\WebBackEndRepo.csproj",
-        "packagesPath": "C:\\Users\\a842225\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a842225\\source\\repos\\GitJoshua\\WebBackEndRepo\\src\\src\\obj\\",
+        "projectPath": "C:\\Users\\a842655\\RiderProjects\\UPGRADE\\backend\\src\\CoursesService\\WebBackEndRepo\\src\\src\\WebBackEndRepo.csproj",
+        "packagesPath": "C:\\Users\\a842655\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\a842655\\RiderProjects\\UPGRADE\\backend\\src\\CoursesService\\WebBackEndRepo\\src\\src\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\a842225\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\a842655\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -48,6 +44,14 @@
               "target": "Package",
               "version": "[8.1.1, )"
             },
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.19.3, )"
+            },
+            "Grpc.AspNetCore": {
+              "target": "Package",
+              "version": "[2.42.0, )"
+            },
             "Microsoft.AspNetCore.JsonPatch": {
               "target": "Package",
               "version": "[6.0.1, )"
@@ -55,6 +59,10 @@
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
               "version": "[6.0.1, )"
+            },
+            "Microsoft.AspNetCore.Server.Kestrel": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -103,7 +111,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
