@@ -73,3 +73,7 @@
 2022-01-21 23:07:38.32 spid54      Parallel redo is shutdown for database 'WebBackEndAPI' with worker pool size [4].
 2022-01-21 23:10:43.88 spid60      Attempting to load library 'xplog70.dll' into memory. This is an informational message only. No user action is required.
 2022-01-21 23:10:44.04 spid60      Using 'xplog70.dll' version '2019.150.4188' to execute extended stored procedure 'xp_msver'. This is an informational message only; no user action is required.
+2022-01-21 23:11:19.88 spid54      [5]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1.
+2022-01-21 23:11:19.88 spid54      Starting up database 'WebBackEndAPI'.
+2022-01-21 23:11:21.04 spid54      Parallel redo is started for database 'WebBackEndAPI' with worker pool size [4].
+2022-01-21 23:11:21.14 spid54      Parallel redo is shutdown for database 'WebBackEndAPI' with worker pool size [4].
