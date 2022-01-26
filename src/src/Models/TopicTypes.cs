@@ -1,8 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using WebCourseRepo.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace WebBackEndRepo.Models
+namespace WebCourseRepo.Models
 {
     [Index(nameof(Name), IsUnique = true)]
     public class TopicTypes : Entity
