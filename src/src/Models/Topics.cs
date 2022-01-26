@@ -1,9 +1,9 @@
-﻿using System.ComponentModel;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using WebCourseRepo.Models;
 
-namespace WebBackEndRepo.Models
+
+namespace WebCourseRepo.Models
 {
     public class Topics : Entity
     {
