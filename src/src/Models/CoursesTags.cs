@@ -1,7 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
-using WebCourseRepo.Models;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace WebBackEndRepo.Models
+
+namespace WebCourseRepo.Models
 {
     public class CoursesTags : Entity
     {
