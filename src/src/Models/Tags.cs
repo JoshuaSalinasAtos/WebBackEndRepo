@@ -1,10 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using WebCourseRepo.Models;
 
-namespace WebBackEndRepo.Models
+
+namespace WebCourseRepo.Models
 {
     [Index(nameof(Name), IsUnique = true)]
     public class Tags : Entity
