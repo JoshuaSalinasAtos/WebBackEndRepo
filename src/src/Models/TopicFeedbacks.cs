@@ -1,7 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
-using WebCourseRepo.Models;
-
-namespace WebBackEndRepo.Models
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+namespace WebCourseRepo.Models
 {
     public class TopicFeedbacks : Entity
     {
