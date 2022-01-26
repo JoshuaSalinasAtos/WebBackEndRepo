@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using WebCourseRepo.Models;
 
 namespace WebCourseRepo.Configurations
@@ -7,6 +7,12 @@ namespace WebCourseRepo.Configurations
     {
         public DbSet<Course> Course { get; set; }
         public DbSet<Status> Status { get; set; }
+        public DbSet<CoursesTags> CourseTags { get; set; }
+        public DbSet<Sections> Sections { get; set; }
+        public DbSet<Tags> Tags { get; set; }
+        public DbSet<Topics> Topics { get; set; }
+        public DbSet<TopicFeedbacks> TopicFeedbacks { get; set; }
+        public DbSet<TopicTypes> TopicTypes { get; set; }
 
         public EntityContext(DbContextOptions options) : base(options)
         {
